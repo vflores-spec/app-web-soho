@@ -35,3 +35,31 @@
   font-size: 0.875rem;
   font-weight: 600;
 }
+
+/* El botón "Guardar": con borde y fondo transparente. */
+.save-button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background: #e4f1f4;
+}
+
+/* Cuando la vacante está guardada, el botón se rellena de color. */
+.save-button-active {
+  color: #ffffff;
+  background: var(--color-primary);
+}
+
+.save-button-active:hover {
+  background: #0b4a59;
+}
