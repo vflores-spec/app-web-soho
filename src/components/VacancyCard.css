@@ -1,8 +1,37 @@
-/* Un borde, esquinas redondeadas y espacio interior para que se vea como una tarjeta. */
 .vacancy-card {
-  border: 1px solid #d0d7de;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  text-align: left;
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+
+.vacancy-card-company {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.vacancy-card-title {
+  margin-top: 0.25rem;
+  font-size: 1.125rem;
+}
+
+.vacancy-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+}
+
+.vacancy-card-modality {
+  padding: 2px 0.75rem;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  color: var(--color-primary);
+  background: #e4f1f4;
+  border-radius: 999px;
+}
+
+.vacancy-card-salary {
+  font-size: 0.875rem;
+  font-weight: 600;
 }

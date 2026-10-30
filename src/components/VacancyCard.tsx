@@ -1,26 +1,21 @@
-// Importa los estilos de este componente. Vite se encarga de incluirlos en la página.
+import type { Vacancy } from '../types/vacancy';
 import './VacancyCard.css';
 
-// Describe QUÉ DATOS recibe el componente y de qué tipo es cada uno.
-// Si alguien usa el componente sin uno de ellos, o con un tipo equivocado, el editor lo marca.
+// Este componente recibe UNA vacante por props.
 interface VacancyCardProps {
-  title: string; // título del puesto
-  company: string; // nombre de la empresa
-  modality: string; // remoto, presencial o híbrido
-  salary: number; // salario ofrecido
+  vacancy: Vacancy;
 }
 
-// El componente es una función flecha que RECIBE las props como un objeto.
-// Los datos se sacan del objeto en la misma línea (destructuring): { title, company, modality, salary }.
-export const VacancyCard = ({ title, company, modality, salary }: VacancyCardProps) => {
+// Muestra los datos de una vacante. Las llaves {} insertan valores de JavaScript dentro del JSX.
+export const VacancyCard = ({ vacancy }: VacancyCardProps) => {
   return (
-    // "className" reemplaza al "class" de HTML (en JavaScript, "class" es una palabra reservada).
     <article className="vacancy-card">
-      {/* Las llaves {} permiten insertar un valor de JavaScript dentro del JSX. */}
-      <h2>{title}</h2>
-      <p>{company}</p>
-      <p>Modalidad: {modality}</p>
-      <p>Salario: ${salary}</p>
+      <p className="vacancy-card-company">{vacancy.company}</p>
+      <h3 className="vacancy-card-title">{vacancy.title}</h3>
+      <div className="vacancy-card-footer">
+        <span className="vacancy-card-modality">{vacancy.modality}</span>
+        <span className="vacancy-card-salary">${vacancy.salary} / mes</span>
+      </div>
     </article>
   );
 };
