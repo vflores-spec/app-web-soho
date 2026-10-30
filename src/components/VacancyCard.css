@@ -1,0 +1,8 @@
+/* Un borde, esquinas redondeadas y espacio interior para que se vea como una tarjeta. */
+.vacancy-card {
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
