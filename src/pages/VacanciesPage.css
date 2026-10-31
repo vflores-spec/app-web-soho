@@ -1,0 +1,25 @@
+.vacancies-page-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 2rem 0 1rem;
+}
+
+.vacancies-page-title {
+  font-size: 1.75rem;
+}
+
+.vacancies-page-count {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.vacancies-page-empty {
+  margin-top: 2rem;
+  color: var(--color-muted);
+}
+
+/* Espacio entre el buscador y la lista. */
+.search-bar {
+  margin-bottom: 1.25rem;
+}

@@ -1,0 +1,65 @@
+.vacancy-card {
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+
+.vacancy-card-company {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.vacancy-card-title {
+  margin-top: 0.25rem;
+  font-size: 1.125rem;
+}
+
+.vacancy-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+}
+
+.vacancy-card-modality {
+  padding: 2px 0.75rem;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  color: var(--color-primary);
+  background: #e4f1f4;
+  border-radius: 999px;
+}
+
+.vacancy-card-salary {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* El botón "Guardar": con borde y fondo transparente. */
+.save-button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background: #e4f1f4;
+}
+
+/* Cuando la vacante está guardada, el botón se rellena de color. */
+.save-button-active {
+  color: #ffffff;
+  background: var(--color-primary);
+}
+
+.save-button-active:hover {
+  background: #0b4a59;
+}

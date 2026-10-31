@@ -1,0 +1,16 @@
+.search-bar {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  font: inherit;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+/* Al enfocarlo, el borde cambia de color y aparece un halo suave. */
+.search-bar:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(15, 92, 110, 0.15);
+}
