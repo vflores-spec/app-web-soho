@@ -21,7 +21,9 @@ export const VacanciesPage = () => {
     <section>
       <div className="vacancies-page-header">
         <h2 className="vacancies-page-title">Vacantes</h2>
-        <p className="vacancies-page-count">{filteredVacancies.length} resultados</p>
+        <p className="vacancies-page-count">
+        {filteredVacancies.length} {filteredVacancies.length === 1 ? 'resultado' : 'resultados'}
+        </p>
       </div>
 
       {/* Se le entrega el texto actual y la función que lo cambia: setSearchTerm. */}
