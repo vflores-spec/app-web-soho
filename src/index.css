@@ -6,6 +6,7 @@
   --color-text: #17202b;
   --color-muted: #5a6573;
   --color-primary: #0f5c6e;
+  --color-danger: #b42318;
 }
 
 /* El borde y el relleno cuentan dentro del ancho de cada elemento. */

@@ -1,8 +1,9 @@
-// Describe cómo es una vacante. "export" permite usarla desde otros archivos.
+// Describe cómo es una vacante, tal como la devuelve la API. "export" permite usarla desde otros archivos.
 export interface Vacancy {
   id: number;
   title: string;
-  company: string;
+  companyId: string;
+  companyName: string;
   modality: string;
   salary: number;
 }

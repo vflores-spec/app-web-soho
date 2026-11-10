@@ -23,3 +23,13 @@
 .search-bar {
   margin-bottom: 1.25rem;
 }
+
+/* Mensajes mientras se cargan los datos o si algo falla. */
+.vacancies-page-status {
+  margin-top: 2rem;
+  color: var(--color-muted);
+}
+
+.vacancies-page-error {
+  color: var(--color-danger);
+}
