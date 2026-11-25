@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { Vacancy } from '../types/vacancy';
 import './VacancyCard.css';
+import { Link } from 'react-router';
 
 // Este componente recibe UNA vacante por props.
 interface VacancyCardProps {
@@ -22,7 +23,12 @@ export const VacancyCard = ({ vacancy }: VacancyCardProps) => {
   return (
     <article className="vacancy-card">
       <p className="vacancy-card-company">{vacancy.companyName}</p>
-      <h3 className="vacancy-card-title">{vacancy.title}</h3>
+      <h3 className="vacancy-card-title">
+        {/* El título es un enlace a la página de detalle de ESTA vacante: /vacancies/<id>. */}
+        <Link to={`/vacancies/${vacancy.id}`} className="vacancy-card-link">
+          {vacancy.title}
+        </Link>
+      </h3>
       <div className="vacancy-card-footer">
         <span className="vacancy-card-modality">{vacancy.modality}</span>
         <span className="vacancy-card-salary">${vacancy.salary} / mes</span>
