@@ -8,3 +8,10 @@ export const getVacancies = async (): Promise<Vacancy[]> => {
   // axios deja el cuerpo de la respuesta (ya convertido de JSON) en "data".
   return response.data;
 };
+
+
+// Pide UNA vacante a la API por su id. El id llega como texto, porque viene de la dirección (URL).
+export const getVacancyById = async (id: string): Promise<Vacancy> => {
+  const response = await apiClient.get<Vacancy>(`/vacancies/${id}`);
+  return response.data;
+};

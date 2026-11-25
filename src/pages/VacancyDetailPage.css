@@ -1,0 +1,56 @@
+.vacancy-detail-back {
+  display: inline-block;
+  margin: 2rem 0 1rem;
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.vacancy-detail-back:hover {
+  text-decoration: underline;
+}
+
+.vacancy-detail {
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+
+.vacancy-detail-company {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.vacancy-detail-title {
+  margin-top: 0.25rem;
+  font-size: 1.75rem;
+}
+
+.vacancy-detail-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5rem 1.5rem;
+  margin: 1.5rem 0 0;
+}
+
+.vacancy-detail-list dt {
+  color: var(--color-muted);
+}
+
+.vacancy-detail-list dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.vacancy-detail-modality {
+  text-transform: capitalize;
+}
+
+.vacancy-detail-status {
+  color: var(--color-muted);
+}
+
+.vacancy-detail-error {
+  color: var(--color-danger);
+}
